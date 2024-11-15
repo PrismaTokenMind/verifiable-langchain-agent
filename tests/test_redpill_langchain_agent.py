@@ -49,7 +49,7 @@ def test_agent_interaction(setup_agent):
 
     # Second interaction
     response_2 = list(agent_executor.stream(
-        {"messages": [HumanMessage(content="whats the weather where I live?")]}, config
+        {"messages": [HumanMessage(content="whats the weather where I live? Mention weather explicitly.")]}, config
     ))[-1]['agent']['messages']
 
 

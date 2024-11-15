@@ -157,8 +157,6 @@ def _convert_dict_to_message(_dict: Mapping[str, Any]) -> BaseMessage:
                     invalid_tool_calls.append(
                         make_invalid_tool_call(raw_tool_call, str(e))
                     )
-        print(f"content: {type(content)}")
-
 
         return AIMessage(
             content=content,  # Ensure content is a valid string
