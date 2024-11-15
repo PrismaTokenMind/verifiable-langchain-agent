@@ -8,7 +8,7 @@ from langchain_core.messages import HumanMessage
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.prebuilt import create_react_agent
 
-from src.verifiable_agent import ChatRedpill
+from verifiable_langchain_agent import ChatRedpill
 
 # Load environment variables from .env file
 load_dotenv()
